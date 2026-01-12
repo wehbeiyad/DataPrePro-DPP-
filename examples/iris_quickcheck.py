@@ -1,5 +1,5 @@
 # examples/iris_quickcheck.py
-from src.datasets import load_iris_dataset
+from IW.datasets import load_iris_dataset
 import numpy as np
 
 ds = load_iris_dataset()
