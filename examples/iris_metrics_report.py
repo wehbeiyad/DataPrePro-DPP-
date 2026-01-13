@@ -4,6 +4,7 @@ from IW.metrics.separability import separability_silhouette
 
 ds = load_iris_dataset()
 
+
 cov = feature_covariance(ds.X)
 sil = separability_silhouette(ds.X, ds.y)
 
