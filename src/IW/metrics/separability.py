@@ -2,10 +2,7 @@ import numpy as np
 from sklearn.metrics import silhouette_score
 
 def separability_silhouette(X: np.ndarray, y: np.ndarray, metric: str = "euclidean") -> float:
-    """
-    Average silhouette score across samples.
-    Higher is better (near 1).
-    """
+    
     X = np.asarray(X)
     y = np.asarray(y)
     if X.ndim != 2 or y.ndim != 1:
